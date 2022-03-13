@@ -17,7 +17,7 @@ static char* readShaderSource(const char* shaderFile)
     char *buf = (char *) malloc(size + 1);
     fread(buf, 1, size, fp);
 
-    buf[size] = '\0';
+    buf[size] = 0;
     fclose(fp);
 
     return buf;
